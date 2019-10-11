@@ -1,0 +1,68 @@
+<html><head><meta charset="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><meta content="http://localhost:3000"/><meta name="viewport" content="width=device-width"/><title>2019-03-09</title><link rel="shortcut icon" href="img/favicon.ico"/><link rel="stylesheet" href="solarized-dark.css"/><link rel="stylesheet" href="css/main.css"/><script type="text/javascript" src="js/jquery-1.4.4.min.js"></script><script type="text/javascript" src="js/underscore-min.js"></script><link rel="stylesheet" href="viewer/viewer.min.css"/><script type="text/javascript" src="viewer/viewer.min.js"></script></head><body class="sideNavVisible"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="/photo/"><img class="logo" src="/photo/img/logo.png"/><span class="headerTitle">照片</span></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"><li><a href="/home" target="_self">首页</a></li><li><a href="86103e1c61764d46a607eee91ca8aee5.html" target="_self">0爸爸</a></li><li><a href="be73277b84fcf398baaa98d628f97bd4.html" target="_self" style="color:#FF4040;">1妈妈</a></li><li><a href="d1b3316612fae0efab364433866538f4.html" target="_self">2方运江</a></li><li><a href="d5625d833b48f1a50997576ff5e55122.html" target="_self">3裴克娟</a></li><li><a href="f2652b7f15c0457207371812f4935d12.html" target="_self">4方远航</a></li><li><a href="0e0146adb48781473b04af2af333fa89.html" target="_self">5方远程</a></li><li><a href="e081fc724843ea993f85eac64fc30418.html" target="_self">6旅游</a></li><li><a href="8b5c04da25edb521012f9b001a5f0073.html" target="_self">7其他</a></li></ul></nav></div></header></div></div><div class="navPusher"><div class="docMainWrapper wrapper"><div class="container docsNavContainer" id="docsNav"><nav class="toc"><div class="toggleNav"><section class="navWrapper wrapper"><div class="navBreadcrumb wrapper"><div class="navToggle" id="navToggler"><i></i></div><h2><i style="font-style:normal;margin-right:10px;">›</i><span>2019-03-09</span></h2></div><div class="navGroups"><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">2018<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><li class="navListItem"><a class="navItem" href="be73277b84fcf398baaa98d628f97bd4.html">2018-01-07</a></li><li class="navListItem"><a class="navItem" href="c116365c0fc2df4fa656975fe789c598.html">2018-01-13</a></li><li class="navListItem"><a class="navItem" href="61e5bebc2a2e2a77a8ec73ac53314033.html">2018-10-03</a></li><li class="navListItem"><a class="navItem" href="337889e7821ec947471f4637291ecf2f.html">2018-10-21</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">2019<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><li class="navListItem"><a class="navItem" href="c609aa91b47269364cbf17572ba72cd4.html">2019-02-18</a></li><li class="navListItem"><a class="navItem" href="a6bf1a110687ffc3c5f0c9fc04c01322.html">2019-02-20</a></li><li class="navListItem navListItemActive"><a class="navItem navItemActive" href="6e305d42cd644ef1a7db2f6ba7e428c5.html">2019-03-09</a></li><li class="navListItem"><a class="navItem" href="ce46675ac1ac09dd09ffc7b82eecd21a.html">2019-07-13</a></li><li class="navListItem"><a class="navItem" href="d1e66f8d8105d12f8c068f7a0be5ca0f.html">2019-07-14</a></li></ul></div></div></section></div><script>
+                        var coll = document.getElementsByClassName('collapsible');
+                        var checkActiveCategory = true;
+                        for (var i = 0; i < coll.length; i++) {
+                            var links = coll[i].nextElementSibling.getElementsByTagName('*');
+                            if (checkActiveCategory){
+                                for (var j = 0; j < links.length; j++) {
+                                    if (links[j].classList.contains('navListItemActive')){
+                                        coll[i].nextElementSibling.classList.toggle('hide');
+                                        coll[i].childNodes[1].classList.toggle('rotate');
+                                        checkActiveCategory = false;
+                                        break;
+                                    }
+                                }
+                            }
+
+                            coll[i].addEventListener('click', function() {
+                                var arrow = this.childNodes[1];
+                                arrow.classList.toggle('rotate');
+                                var content = this.nextElementSibling;
+                                content.classList.toggle('hide');
+                            });
+                        }
+
+                        document.addEventListener('DOMContentLoaded', function() {
+                            createToggler('#navToggler', '#docsNav', 'docsSliderActive');
+                            createToggler('#tocToggler', 'body', 'tocActive');
+
+                            const headings = document.querySelector('.toc-headings');
+                            headings && headings.addEventListener('click', function(event) {
+                                if (event.target.tagName === 'A') {
+                                    document.body.classList.remove('tocActive');
+                                }
+                            }, false);
+
+                            function createToggler(togglerSelector, targetSelector, className) {
+                                var toggler = document.querySelector(togglerSelector);
+                                var target = document.querySelector(targetSelector);
+
+                                if (!toggler) {
+                                    return;
+                                }
+
+                                toggler.onclick = function(event) {
+                                    event.preventDefault();
+                                    target.classList.toggle(className);
+                                };
+                            }
+                        });
+                        </script></nav></div><div class="container mainContainer"><div class="wrapper"><div class="post"><article style="overflow:scroll;"><div id="mdoc_photo_container"><div class="photoItemContainer"><img src="photo/1妈妈/2019/2019-03-09/IMG_20190309_132750.jpg" class="photoItem"/><a href="https://raw.githubusercontent.com/blogoo/photo/master/static/photo/1妈妈/2019/2019-03-09/IMG_20190309_132750.jpg" target="_blank" class="photoName">IMG_20190309_132750</a></div><div class="photoItemContainer"><img src="photo/1妈妈/2019/2019-03-09/IMG_20190309_132751.jpg" class="photoItem"/><a href="https://raw.githubusercontent.com/blogoo/photo/master/static/photo/1妈妈/2019/2019-03-09/IMG_20190309_132751.jpg" target="_blank" class="photoName">IMG_20190309_132751</a></div><script>
+                        $(document).ready(function(){
+                            var viewer = new Viewer(document.getElementById("mdoc_photo_container"), {
+                                backdrop: 'static',
+                                toolbar: {
+                                    prev: 1,
+                                    zoomOut: 1,
+                                    oneToOne: 1,
+                                    flipHorizontal: 14,
+                                    rotateLeft: 1,
+                                    play: 1,
+                                    rotateRight: 1,
+                                    flipVertical: 1,
+                                    reset: 1,
+                                    zoomIn: 1,
+                                    next: 1,
+                                },
+                            })})
+                            </script></div></article></div><div class="docs-prevnext"><a class="docs-prev button" href="a6bf1a110687ffc3c5f0c9fc04c01322.html"> ←  2019-02-20 </a><a class="docs-next button" href="ce46675ac1ac09dd09ffc7b82eecd21a.html"> 2019-07-13  → </a></div></div></div></div><footer class="nav-footer" id="footer"><section class="copyright">Copyright © 2019 方运江.</section></footer></div></body></html>
