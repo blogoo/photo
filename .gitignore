@@ -1,0 +1,13 @@
+.DS_Store
+*.log
+logs
+*.pid
+pids
+*.seed
+*.idea
+.idea
+.tmp
+package.json
+package-lock.json
+node_modules
+/build
