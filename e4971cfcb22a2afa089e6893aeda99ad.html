@@ -1,0 +1,68 @@
+<html><head><meta charset="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><meta content="http://localhost:3000"/><meta name="viewport" content="width=device-width"/><title>红军山</title><link rel="shortcut icon" href="img/favicon.ico"/><link rel="stylesheet" href="solarized-dark.css"/><link rel="stylesheet" href="css/main.css"/><script type="text/javascript" src="js/jquery-1.4.4.min.js"></script><script type="text/javascript" src="js/underscore-min.js"></script><link rel="stylesheet" href="viewer/viewer.min.css"/><script type="text/javascript" src="viewer/viewer.min.js"></script></head><body class="sideNavVisible"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="/photo/"><img class="logo" src="/photo/img/logo.png"/><span class="headerTitle">照片</span></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"><li><a href="/home" target="_self">首页</a></li><li><a href="86103e1c61764d46a607eee91ca8aee5.html" target="_self">0爸爸</a></li><li><a href="be73277b84fcf398baaa98d628f97bd4.html" target="_self">1妈妈</a></li><li><a href="d1b3316612fae0efab364433866538f4.html" target="_self">2方运江</a></li><li><a href="d5625d833b48f1a50997576ff5e55122.html" target="_self">3裴克娟</a></li><li><a href="f2652b7f15c0457207371812f4935d12.html" target="_self">4方远航</a></li><li><a href="0e0146adb48781473b04af2af333fa89.html" target="_self">5方远程</a></li><li><a href="e081fc724843ea993f85eac64fc30418.html" target="_self" style="color:#FF4040;">6旅游</a></li><li><a href="8b5c04da25edb521012f9b001a5f0073.html" target="_self">7其他</a></li></ul></nav></div></header></div></div><div class="navPusher"><div class="docMainWrapper wrapper"><div class="container docsNavContainer" id="docsNav"><nav class="toc"><div class="toggleNav"><section class="navWrapper wrapper"><div class="navBreadcrumb wrapper"><div class="navToggle" id="navToggler"><i></i></div><h2><i style="font-style:normal;margin-right:10px;">›</i><span>红军山</span></h2></div><div class="navGroups"><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">2017<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><li class="navListItem"><a class="navItem" href="e081fc724843ea993f85eac64fc30418.html">扎佐动物园</a></li><li class="navListItem"><a class="navItem" href="7d41de42e923e325e198ce91695a0b09.html">织金洞</a></li><li class="navListItem"><a class="navItem" href="192fc5e30bdca59976ec5fabc14869e8.html">黄果树</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">2018<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><li class="navListItem"><a class="navItem" href="e52eedefcc9ba57246f3cb5e5dbff5ff.html">天河潭</a></li><li class="navListItem"><a class="navItem" href="b3544ffea632770b01a145b37d2e2866.html">小车河菊花</a></li><li class="navListItem"><a class="navItem" href="20119d7ac86bd018ecbc4a8402587f4a.html">平坝樱花</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">2019<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><li class="navListItem"><a class="navItem" href="691a3b12afd9019b5872ddcdb62edca6.html">小车河</a></li><li class="navListItem"><a class="navItem" href="826d29816e383243011e4b82817308d3.html">海底世界</a></li><li class="navListItem"><a class="navItem" href="9de8c45df20a38ff5bf8e9567eb2f307.html">海龙囤</a></li><li class="navListItem navListItemActive"><a class="navItem navItemActive" href="e4971cfcb22a2afa089e6893aeda99ad.html">红军山</a></li><li class="navListItem"><a class="navItem" href="b83250142f03d8f2de235219867901b7.html">遵义会址</a></li><li class="navListItem"><a class="navItem" href="ba022dfc11e4192ae5585d2fb6adbd58.html">青岩</a></li><li class="navListItem"><a class="navItem" href="adf4d3b678c2741e52cbf137d8a73806.html">黔灵山</a></li></ul></div></div></section></div><script>
+                        var coll = document.getElementsByClassName('collapsible');
+                        var checkActiveCategory = true;
+                        for (var i = 0; i < coll.length; i++) {
+                            var links = coll[i].nextElementSibling.getElementsByTagName('*');
+                            if (checkActiveCategory){
+                                for (var j = 0; j < links.length; j++) {
+                                    if (links[j].classList.contains('navListItemActive')){
+                                        coll[i].nextElementSibling.classList.toggle('hide');
+                                        coll[i].childNodes[1].classList.toggle('rotate');
+                                        checkActiveCategory = false;
+                                        break;
+                                    }
+                                }
+                            }
+
+                            coll[i].addEventListener('click', function() {
+                                var arrow = this.childNodes[1];
+                                arrow.classList.toggle('rotate');
+                                var content = this.nextElementSibling;
+                                content.classList.toggle('hide');
+                            });
+                        }
+
+                        document.addEventListener('DOMContentLoaded', function() {
+                            createToggler('#navToggler', '#docsNav', 'docsSliderActive');
+                            createToggler('#tocToggler', 'body', 'tocActive');
+
+                            const headings = document.querySelector('.toc-headings');
+                            headings && headings.addEventListener('click', function(event) {
+                                if (event.target.tagName === 'A') {
+                                    document.body.classList.remove('tocActive');
+                                }
+                            }, false);
+
+                            function createToggler(togglerSelector, targetSelector, className) {
+                                var toggler = document.querySelector(togglerSelector);
+                                var target = document.querySelector(targetSelector);
+
+                                if (!toggler) {
+                                    return;
+                                }
+
+                                toggler.onclick = function(event) {
+                                    event.preventDefault();
+                                    target.classList.toggle(className);
+                                };
+                            }
+                        });
+                        </script></nav></div><div class="container mainContainer"><div class="wrapper"><div class="post"><article style="overflow:visible;"><div id="mdoc_photo_container"><div class="photoItemContainer"><img src="photo/6旅游/2019/红军山/IMG_20191002_181323.jpg" class="photoItem"/><a href="https://raw.githubusercontent.com/blogoo/photo/master/static/photo/6旅游/2019/红军山/IMG_20191002_181323.jpg" target="_blank" class="photoName">IMG_20191002_181323</a></div><div class="photoItemContainer"><img src="photo/6旅游/2019/红军山/IMG_20191002_181926.jpg" class="photoItem"/><a href="https://raw.githubusercontent.com/blogoo/photo/master/static/photo/6旅游/2019/红军山/IMG_20191002_181926.jpg" target="_blank" class="photoName">IMG_20191002_181926</a></div><div class="photoItemContainer"><img src="photo/6旅游/2019/红军山/IMG_20191002_181928.jpg" class="photoItem"/><a href="https://raw.githubusercontent.com/blogoo/photo/master/static/photo/6旅游/2019/红军山/IMG_20191002_181928.jpg" target="_blank" class="photoName">IMG_20191002_181928</a></div><div class="photoItemContainer"><img src="photo/6旅游/2019/红军山/IMG_20191002_181930.jpg" class="photoItem"/><a href="https://raw.githubusercontent.com/blogoo/photo/master/static/photo/6旅游/2019/红军山/IMG_20191002_181930.jpg" target="_blank" class="photoName">IMG_20191002_181930</a></div><div class="photoItemContainer"><img src="photo/6旅游/2019/红军山/IMG_20191002_181932.jpg" class="photoItem"/><a href="https://raw.githubusercontent.com/blogoo/photo/master/static/photo/6旅游/2019/红军山/IMG_20191002_181932.jpg" target="_blank" class="photoName">IMG_20191002_181932</a></div><div class="photoItemContainer"><img src="photo/6旅游/2019/红军山/IMG_20191002_181934.jpg" class="photoItem"/><a href="https://raw.githubusercontent.com/blogoo/photo/master/static/photo/6旅游/2019/红军山/IMG_20191002_181934.jpg" target="_blank" class="photoName">IMG_20191002_181934</a></div><div class="photoItemContainer"><img src="photo/6旅游/2019/红军山/IMG_20191002_181935.jpg" class="photoItem"/><a href="https://raw.githubusercontent.com/blogoo/photo/master/static/photo/6旅游/2019/红军山/IMG_20191002_181935.jpg" target="_blank" class="photoName">IMG_20191002_181935</a></div><div class="photoItemContainer"><img src="photo/6旅游/2019/红军山/IMG_20191002_181937.jpg" class="photoItem"/><a href="https://raw.githubusercontent.com/blogoo/photo/master/static/photo/6旅游/2019/红军山/IMG_20191002_181937.jpg" target="_blank" class="photoName">IMG_20191002_181937</a></div><div class="photoItemContainer"><img src="photo/6旅游/2019/红军山/IMG_20191002_181939.jpg" class="photoItem"/><a href="https://raw.githubusercontent.com/blogoo/photo/master/static/photo/6旅游/2019/红军山/IMG_20191002_181939.jpg" target="_blank" class="photoName">IMG_20191002_181939</a></div><div class="photoItemContainer"><img src="photo/6旅游/2019/红军山/IMG_20191002_181941.jpg" class="photoItem"/><a href="https://raw.githubusercontent.com/blogoo/photo/master/static/photo/6旅游/2019/红军山/IMG_20191002_181941.jpg" target="_blank" class="photoName">IMG_20191002_181941</a></div><script>
+                        $(document).ready(function(){
+                            var viewer = new Viewer(document.getElementById("mdoc_photo_container"), {
+                                backdrop: 'static',
+                                toolbar: {
+                                    prev: 1,
+                                    zoomOut: 1,
+                                    oneToOne: 1,
+                                    flipHorizontal: 14,
+                                    rotateLeft: 1,
+                                    play: 1,
+                                    rotateRight: 1,
+                                    flipVertical: 1,
+                                    reset: 1,
+                                    zoomIn: 1,
+                                    next: 1,
+                                },
+                            })})
+                            </script></div></article></div><div class="docs-prevnext"><a class="docs-prev button" href="9de8c45df20a38ff5bf8e9567eb2f307.html"> ←  海龙囤 </a><a class="docs-next button" href="b83250142f03d8f2de235219867901b7.html"> 遵义会址  → </a></div></div></div></div><footer class="nav-footer" id="footer"><section class="copyright">Copyright © 2019 方运江.</section></footer></div></body></html>
